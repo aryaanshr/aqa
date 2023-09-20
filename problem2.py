@@ -1,6 +1,5 @@
-### Lines 52-78, I just added a call back to the Main() function after the try except that we had in the function already
-
-  def __LoadPuzzle(self, Filename): #private method which loads the puzzle from .txt files
+### Lines 52-78, I just added a call back to the Main() function after the try except that we had in the function already and I added a message prompting the user to actually input a legit file name.
+  def __LoadPuzzle(self, Filename):
         try:
             with open(Filename) as f:
                 NoOfSymbols = int(f.readline().rstrip())
@@ -26,6 +25,5 @@
                 self.__Score = int(f.readline().rstrip())
                 self.__SymbolsLeft = int(f.readline().rstrip())
         except:
-            print("Puzzle not loaded")    
+            print("Puzzle not loaded. Please enter a real filename...")
             Main()
-  
