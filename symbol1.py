@@ -1,4 +1,4 @@
-# Added a .isUpper()
+# Added a .upper()
 
 import random
 import os
