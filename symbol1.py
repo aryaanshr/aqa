@@ -1,3 +1,5 @@
+# Added a .isUpper()
+
 import random
 import os
 def Main():
