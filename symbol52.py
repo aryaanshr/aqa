@@ -163,7 +163,7 @@ class Puzzle():
     def __GetSymbolFromUser(self):
         Symbol = ""
         while not Symbol in self.__AllowedSymbols:
-            Symbol = input("Enter symbol (or 'B' to use the bomb): ")
+            Symbol = input("Enter symbol (or 'B' to get rid of any blocked cells (will cost you 5pts!)): ")
             if Symbol == 'B':
                 return Symbol
         return Symbol
